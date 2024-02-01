@@ -1,0 +1,8 @@
+extends layout 
+block content 
+    h1=title 
+    form(method='post', action='new')
+        input(type='text', placeholder='Author', name='author', required)
+        textarea(placeholder='Message', name='message', required)
+        input(type='submit', value='Submit')
+        

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div#container 
+    each message in messages 
+      div.card
+        p user: #{message.user} 
+        p text: #{message.text} 
+        p date-added: #{message.added}
+        
